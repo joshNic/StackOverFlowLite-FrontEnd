@@ -44,6 +44,20 @@ export default function (state = initialState, action) {
         question: { question_body: "Question Not Found" },
         loading: false
       };
+    case LOGIN:
+      alert("success", "Successfully Loggedin ....Redirecting", null, null, "/questions");
+      return {
+        ...state,
+        // question: action.payload,
+        response: action.payload,
+
+      };
+    case LOGIN_FAIL:
+      alert("error", `${action.payload} Please create an account`, null, null, null);
+      return {
+        ...state,
+        response: action.payload,
+      };
     default:
       return state;
   }

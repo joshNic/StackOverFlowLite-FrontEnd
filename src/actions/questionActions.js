@@ -1,7 +1,22 @@
 /* eslint-disable no-unused-expressions */
-import { GET_ALL, GET_ONE, GET_ONE_FAIL } from "./types";
+import { GET_ALL, GET_ONE, GET_ONE_FAIL, LOGIN, LOGIN_FAIL } from "./types";
+import toastr from "toastr";
 
-export const getAll = () => dispatch => 
+import { GET_ALL, LOGIN, LOGIN_FAIL, REGISTER, GET_ONE, GET_ONE_FAIL, POST, REGISTER_FAIL, POST_FAIL, LOG_OUT } from "./types";
+
+export const alert=(type,errorMsg,username, token, url)=>{
+  if(type === "error" || "success"  && !username && !token){
+    type === "success" ? toastr.success(errorMsg) && setTimeout(() => window.location.replace(url), 3000): toastr.error(errorMsg);
+  }
+  else if(type==="success" && !errorMsg){
+    toastr.success(`Logging in as ${username}!`);
+    localStorage.setItem("token", token);
+    localStorage.setItem("username", username);
+    setTimeout(() => window.location.replace(url), 3000);
+  };
+
+};
+export const getAll = () => dispatch =>
   fetch("https://stackoverflow-v2.herokuapp.com/api/v2/questions")
     .then(res => res.json())
     .then(questions =>
@@ -11,45 +26,73 @@ export const getAll = () => dispatch =>
       })
     );
 
-export const register = (registerData) => dispatch => 
-fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/signup", {
+export const register = (registerData) => dispatch =>
+  fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/signup", {
     method: "POST",
     headers: {
-    "Accept": "application/json, text/plain, */*",
-    "Content-type": "application/json"
+      "Accept": "application/json, text/plain, */*",
+      "Content-type": "application/json"
     },
     body: JSON.stringify(registerData)
-})
+  })
     .then(res => {
-    const resp = res.json();
-    if (res.status === 201) {
+      const resp = res.json();
+      if (res.status === 201) {
         resp.then(reponse =>
-        dispatch({ type: REGISTER, payload: reponse }));
-    } else {
+          dispatch({ type: REGISTER, payload: reponse }));
+      } else {
         resp.then(reponse =>
-        dispatch({ type: REGISTER_FAIL, payload: reponse }));
-    }
+          dispatch({ type: REGISTER_FAIL, payload: reponse }));
+      }
     });
 
-export const getOne = (id) => dispatch => 
-fetch(`https://stackoverflow-v2.herokuapp.com/api/v2/question/${id}`, {
+export const login = (registerData) => dispatch => {
+  return fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/login", {
     method: "GET",
     headers: {
-    "Accept": "application/json, text/plain, */*",
-    "Content-type": "application/json"
+      "Authorization": `Basic ${window.btoa(`${registerData.email}:${registerData.password}`)}`,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
     }
-})
+  })
     .then((res) => {
-    let result;
-    if(res.status === 200){
+      let result;
+      if (res.status === 200) {
         result = res.json();
-        result.then(response =>{
-        dispatch({ type: GET_ONE, payload: response });});
-    }
-    else {
-        result = res.text();
-        result.then(response=>{
-        dispatch({ type: GET_ONE_FAIL, payload: response});
+        result.then(response => {
+          localStorage.setItem("token", response.token);
+          dispatch({ type: LOGIN, payload: response.token });
         });
-    }});
-  
+      }
+      else {
+        result = res.text();
+        result.then(response => {
+          dispatch({ type: LOGIN_FAIL, payload: response });
+        });
+      }
+    });
+};
+
+export const getOne = (id) => dispatch =>
+  fetch(`https://stackoverflow-v2.herokuapp.com/api/v2/question/${id}`, {
+    method: "GET",
+    headers: {
+      "Accept": "application/json, text/plain, */*",
+      "Content-type": "application/json"
+    }
+  })
+    .then((res) => {
+      let result;
+      if (res.status === 200) {
+        result = res.json();
+        result.then(response => {
+          dispatch({ type: GET_ONE, payload: response });
+        });
+      }
+      else {
+        result = res.text();
+        result.then(response => {
+          dispatch({ type: GET_ONE_FAIL, payload: response });
+        });
+      }
+    });
