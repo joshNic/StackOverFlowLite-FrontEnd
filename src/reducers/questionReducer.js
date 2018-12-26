@@ -24,6 +24,19 @@ export default function (state = initialState, action) {
         loading: false
 
       };
+    case REGISTER:
+      alert("success", "Successfully Registered ....Redirecting", null, null, "/login");
+      return {
+        ...state,
+        response: action.payload,
+
+      };
+    case REGISTER_FAIL:
+      alert("error", action.payload.error, null, null, null);
+      return {
+        ...state,
+        response: action.payload,
+      };
     case GET_ONE_FAIL:
       return {
         ...state,

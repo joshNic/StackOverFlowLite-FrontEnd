@@ -1,4 +1,4 @@
-import { GET_ALL, GET_ONE, GET_ONE_FAIL }  from "../../src/actions/types";
+import { GET_ALL, GET_ONE, GET_ONE_FAIL, REGISTER, REGISTER_FAIL }  from "../../src/actions/types";
 import questionReducer from "../../src/reducers/questionReducer";
 
 describe("questionReducer", () => {
@@ -28,6 +28,24 @@ describe("questionReducer", () => {
         payload: { message: "some message"}
       })
     ).toEqual({loading: false, question: {question_body: "Question Not Found"}, "questions": [], response: {message: "some message"}});
+  });
+
+  it("should update state on REGISTER action type", () => {
+    expect(
+      questionReducer(undefined, {
+        type: REGISTER,
+        payload: { message: "Successfully registered"}
+      })
+    ).toEqual({loading: true, question: {}, questions: [], response: {message: "Successfully registered"}});
+  });
+
+  it("should update state on REGISTER_FAIL action type", () => {
+    expect(
+      questionReducer(undefined, {
+        type: REGISTER_FAIL,
+        payload: { message: "Error Not Registered"}
+      })
+    ).toEqual({loading: true, question: {}, questions: [], response: {message: "Error Not Registered"}});
   });
 
 });
