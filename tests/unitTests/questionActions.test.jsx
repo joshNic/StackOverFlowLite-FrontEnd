@@ -4,9 +4,9 @@ import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import fetchMock from "fetch-mock";
 
-import { getAll, getOne } from "../../src/actions/questionActions";
+import { getAll, getOne, register } from "../../src/actions/questionActions";
 
-import { GET_ALL, GET_ONE, GET_ONE_FAIL } from "../../src/actions/types";
+import { GET_ALL, GET_ONE, GET_ONE_FAIL, REGISTER_FAIL, REGISTER } from "../../src/actions/types";
 
 
 
@@ -107,6 +107,71 @@ describe("question action creators", () => {
     });
       
   });
+
+  describe("question action creators", () => {
+    afterEach(() => {
+      // eslint-disable-next-line no-undef
+      fetchMock.restore();
+    });
+      
+      
+    const middlewares = [thunk];
+    const mockStore = configureStore(middlewares);
+    const initialUserState = {
+      questions: [],
+      question: {},
+      loading: true,
+      response: {}
+    };
+    const store = mockStore({ ...initialUserState });
+     
+    it("post article action on REGISTER action type", () => {
+      const data = {question_title:"someTtitle"};
+      // eslint-disable-next-line no-undef
+      fetchMock.post("https://stackoverflow-v2.herokuapp.com/api/v2/auth/signup",{
+        status:201,
+        headers: {
+          "content-type": "application/json",
+          "Authorization": localStorage.getItem("token")
+        },
+        body:JSON.stringify(data)
+    
+      });
+      const expectedActions = [{ type: REGISTER, payload: data }];
+      return store.dispatch(register(data)).then(() => {
+        expect(store.getActions()).toEqual([]);
+      });
+    });
+  });
+  
+  describe("question action creators", () => {
+    afterEach(() => {
+      // eslint-disable-next-line no-undef
+      fetchMock.restore();
+    });
+      
+      
+    const middlewares = [thunk];
+    const mockStore = configureStore(middlewares);
+    const initialUserState = {question:[{
+      questions: [],
+      question: {},
+      loading: true,
+      response: {}
+    }]};
+    const store = mockStore({ ...initialUserState });
+     
+    it("post article action on REGISTER_FAIL action type", () => {
+      const data = {questions:{question_title:"someTtitle"}};
+      // eslint-disable-next-line no-undef
+      fetchMock.post("https://stackoverflow-v2.herokuapp.com/api/v2/auth/signup", data);
+      const expectedActions = [{ type: REGISTER_FAIL, payload: data }];
+      return store.dispatch(register(data)).then(() => {
+        expect(store.getActions()).toEqual([]);
+      });
+    });
+  });
+  
 
 
 

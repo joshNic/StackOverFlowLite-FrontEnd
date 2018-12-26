@@ -11,6 +11,26 @@ export const getAll = () => dispatch =>
       })
     );
 
+export const register = (registerData) => dispatch => 
+fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/signup", {
+    method: "POST",
+    headers: {
+    "Accept": "application/json, text/plain, */*",
+    "Content-type": "application/json"
+    },
+    body: JSON.stringify(registerData)
+})
+    .then(res => {
+    const resp = res.json();
+    if (res.status === 201) {
+        resp.then(reponse =>
+        dispatch({ type: REGISTER, payload: reponse }));
+    } else {
+        resp.then(reponse =>
+        dispatch({ type: REGISTER_FAIL, payload: reponse }));
+    }
+    });
+
 export const getOne = (id) => dispatch => 
 fetch(`https://stackoverflow-v2.herokuapp.com/api/v2/question/${id}`, {
     method: "GET",
