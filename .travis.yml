@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "lts/*"
+cache:
+  directories:
+    - node_modules
+install:
+  - yarn
+script:
+  - rm -rf package-lock.json node_modules 
+  - yarn
+  - yarn add coveralls
+  - yarn test -u
+after_success:
+  - yarn coveralls
