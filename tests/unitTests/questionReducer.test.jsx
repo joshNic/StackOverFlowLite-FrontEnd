@@ -1,4 +1,4 @@
-import { GET_ALL, GET_ONE, GET_ONE_FAIL, REGISTER, REGISTER_FAIL } from "../../src/actions/types";
+import { GET_ALL, GET_ONE, GET_ONE_FAIL, REGISTER, REGISTER_FAIL, POST, POST_FAIL } from "../../src/actions/types";
 import questionReducer from "../../src/reducers/questionReducer";
 
 describe("questionReducer", () => {
@@ -28,6 +28,23 @@ describe("questionReducer", () => {
         payload: { message: "some message" }
       })
     ).toEqual({ loading: false, question: { question_body: "Question Not Found" }, "questions": [], response: { message: "some message" } });
+  });
+  it("should update state on POST action type", () => {
+    expect(
+      questionReducer(undefined, {
+        type: POST,
+        payload: { question: {question:{}}}
+      })
+    ).toEqual({loading: false, question: {question: {question: {}}}, questions: [], response: {question: {question: {}}}});
+  });
+
+  it("should update state on POST_FAIL action type", () => {
+    expect(
+      questionReducer(undefined, {
+        type: POST_FAIL,
+        payload: { response: {response:{message:"message"}}}
+      })
+    ).toEqual({loading: false, question: {}, questions: [], response: {response: {response: {message: "message"}}}});
   });
 
   it("should update state on REGISTER action type", () => {

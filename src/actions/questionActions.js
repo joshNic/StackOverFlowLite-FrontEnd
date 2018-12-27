@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-expressions */
-import { GET_ALL, GET_ONE, GET_ONE_FAIL, LOGIN, LOGIN_FAIL } from "./types";
 import toastr from "toastr";
 
-import { GET_ALL, LOGIN, LOGIN_FAIL, REGISTER, GET_ONE, GET_ONE_FAIL, POST, REGISTER_FAIL, POST_FAIL, LOG_OUT } from "./types";
+import { GET_ALL, LOGIN, LOGIN_FAIL, REGISTER, GET_ONE, GET_ONE_FAIL, POST, REGISTER_FAIL, POST_FAIL } from "./types";
 
 export const alert=(type,errorMsg,username, token, url)=>{
   if(type === "error" || "success"  && !username && !token){
@@ -16,6 +15,31 @@ export const alert=(type,errorMsg,username, token, url)=>{
   };
 
 };
+
+export const postQuestion = (questionData) => dispatch => 
+  fetch("https://stackoverflow-v2.herokuapp.com/api/v2/question", {
+    method: "POST",
+    headers: {
+      "Accept": "application/json, text/plain, */*",
+      "Content-type": "application/json",
+      "x-access-token": localStorage.getItem("token")
+    },
+    body: JSON.stringify(questionData)
+  })
+    .then((res) => {
+      let result;
+      if(res.status === 201){
+        result = res.json();
+        result.then(response =>{
+          dispatch({ type: POST, payload: response.message });});
+      }
+      else {
+        result = res.text();
+        result.then(response=>{
+          dispatch({ type: POST_FAIL, payload: response});
+        });
+      }});
+
 export const getAll = () => dispatch =>
   fetch("https://stackoverflow-v2.herokuapp.com/api/v2/questions")
     .then(res => res.json())

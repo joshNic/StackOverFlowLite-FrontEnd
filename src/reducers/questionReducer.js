@@ -1,4 +1,5 @@
-import { GET_ALL, GET_ONE, GET_ONE_FAIL } from "../actions/types";
+import { GET_ALL, REGISTER, REGISTER_FAIL, LOGIN, LOGIN_FAIL, POST, POST_FAIL, GET_ONE, GET_ONE_FAIL } from "../actions/types";
+import { alert } from "../actions/questionActions";
 
 
 
@@ -51,6 +52,22 @@ export default function (state = initialState, action) {
         // question: action.payload,
         response: action.payload,
 
+      };
+    case POST:
+      alert("success", "Question Successfully Created ....Redirecting", null, null, "/questions");
+      return {
+        ...state,
+        question: action.payload,
+        response: action.payload,
+        loading: false
+
+      };
+    case POST_FAIL:
+      alert("error", "Error check details and try again. All fields are required", null, null, null);
+      return {
+        ...state,
+        response: action.payload,
+        loading: false
       };
     case LOGIN_FAIL:
       alert("error", `${action.payload} Please create an account`, null, null, null);
