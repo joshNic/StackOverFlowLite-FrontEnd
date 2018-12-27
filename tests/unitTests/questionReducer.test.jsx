@@ -1,4 +1,4 @@
-import { GET_ALL, GET_ONE, GET_ONE_FAIL, REGISTER, REGISTER_FAIL, POST, POST_FAIL } from "../../src/actions/types";
+import { GET_ALL, GET_ONE, GET_ONE_FAIL, REGISTER, REGISTER_FAIL, POST, POST_FAIL, LOG_OUT } from "../../src/actions/types";
 import questionReducer from "../../src/reducers/questionReducer";
 
 describe("questionReducer", () => {
@@ -19,6 +19,15 @@ describe("questionReducer", () => {
         payload: [{ question: {} }]
       })
     ).toEqual({ loading: false, question: { question: {} }, questions: [], response: {} });
+  });
+
+  it("should update state on LOG_OUT action type", () => {
+    expect(
+      questionReducer(undefined, {
+        type: LOG_OUT,
+        payload: { message: "logged out"}
+      })
+    ).toEqual({loading: true, question: {}, questions: [], response: {message: "logged out"}});
   });
 
   it("should update state on GET_ONE_FAIL action type", () => {

@@ -1,4 +1,4 @@
-import { GET_ALL, REGISTER, REGISTER_FAIL, LOGIN, LOGIN_FAIL, POST, POST_FAIL, GET_ONE, GET_ONE_FAIL } from "../actions/types";
+import { GET_ALL, REGISTER, REGISTER_FAIL, LOGIN, LOGIN_FAIL, POST, POST_FAIL, GET_ONE, GET_ONE_FAIL, LOG_OUT } from "../actions/types";
 import { alert } from "../actions/questionActions";
 
 
