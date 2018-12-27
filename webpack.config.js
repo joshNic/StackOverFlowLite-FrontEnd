@@ -31,7 +31,7 @@ const config = {
     ],
   },
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: true
   },
   plugins: [
     new HTMLWebpackPlugin({
