@@ -1,19 +1,19 @@
 import "babel-polyfill";
 import React from "react";
-import { mount } from "enzyme";
+import {mount } from "enzyme";
 
-import { Login, mapDispatchToProps } from "../../src/components/Login";
+import  { Login, mapDispatchToProps}   from "../../src/components/Login";
 
 describe("<Content />", () => {
   const initialState = {
     email: "",
     password: "",
   };
-
+ 
   const editor = mount(<Login login={jest.fn()} />);
   const preventDefault = jest.fn();
   test("should render without crashing", () => {
-
+    
     expect(editor).toMatchSnapshot();
   });
   test("it triggers the postQuestion action", () => {
@@ -22,7 +22,7 @@ describe("<Content />", () => {
     mapper.login(initialState);
     expect(mock).toHaveBeenCalled();
   });
-
+ 
 
   test("should render a form that handles submits", () => {
     expect(

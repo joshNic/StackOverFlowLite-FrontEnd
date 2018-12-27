@@ -3,6 +3,8 @@ import React from "react";
 import "../App.css";
 import Footer from "../commons/Footer";
 import Header from "../commons/Header";
+import Content from "./Content";
+
 
 const  App = () => 
   (
@@ -12,6 +14,7 @@ const  App = () =>
         <header>
           <Header /> 
         </header>
+        <Content />
       </div>
       <footer className="container">
         <Footer />

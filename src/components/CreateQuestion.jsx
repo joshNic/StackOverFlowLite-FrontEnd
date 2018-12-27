@@ -50,7 +50,7 @@ class CreateQuestion extends Component {
               onChange={this.onChange}
               value={title}
             />
-
+            
             <label
               className="col-form-label col-form-label-lg"
               htmlFor="inputBody"
@@ -67,7 +67,7 @@ class CreateQuestion extends Component {
               onChange={this.onChange}
               value={body}
             />
-
+            
           </div>
           <div className="text-center">
             <button type="submit" className="btn btn-primary">

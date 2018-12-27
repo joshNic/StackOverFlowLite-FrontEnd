@@ -3,11 +3,11 @@ import toastr from "toastr";
 
 import { GET_ALL, LOGIN, LOGIN_FAIL, REGISTER, GET_ONE, GET_ONE_FAIL, POST, REGISTER_FAIL, POST_FAIL, LOG_OUT } from "./types";
 
-export const alert = (type, errorMsg, username, token, url) => {
-  if (type === "error" || "success" && !username && !token) {
-    type === "success" ? toastr.success(errorMsg) && setTimeout(() => window.location.replace(url), 3000) : toastr.error(errorMsg);
+export const alert=(type,errorMsg,username, token, url)=>{
+  if(type === "error" || "success"  && !username && !token){
+    type === "success" ? toastr.success(errorMsg) && setTimeout(() => window.location.replace(url), 3000): toastr.error(errorMsg);
   }
-  else if (type === "success" && !errorMsg) {
+  else if(type==="success" && !errorMsg){
     toastr.success(`Logging in as ${username}!`);
     localStorage.setItem("token", token);
     localStorage.setItem("username", username);
@@ -16,7 +16,7 @@ export const alert = (type, errorMsg, username, token, url) => {
 
 };
 
-export const logOut = () => dispatch => {
+export const logOut = () => dispatch =>{
   localStorage.removeItem("token");
   return dispatch({
     type: LOG_OUT,
@@ -24,33 +24,7 @@ export const logOut = () => dispatch => {
   });
 };
 
-export const postQuestion = (questionData) => dispatch =>
-  fetch("https://stackoverflow-v2.herokuapp.com/api/v2/question", {
-    method: "POST",
-    headers: {
-      "Accept": "application/json, text/plain, */*",
-      "Content-type": "application/json",
-      "x-access-token": localStorage.getItem("token")
-    },
-    body: JSON.stringify(questionData)
-  })
-    .then((res) => {
-      let result;
-      if (res.status === 201) {
-        result = res.json();
-        result.then(response => {
-          dispatch({ type: POST, payload: response.message });
-        });
-      }
-      else {
-        result = res.text();
-        result.then(response => {
-          dispatch({ type: POST_FAIL, payload: response });
-        });
-      }
-    });
-
-export const getAll = () => dispatch =>
+export const getAll = () => dispatch => 
   fetch("https://stackoverflow-v2.herokuapp.com/api/v2/questions")
     .then(res => res.json())
     .then(questions =>
@@ -60,7 +34,32 @@ export const getAll = () => dispatch =>
       })
     );
 
-export const register = (registerData) => dispatch =>
+export const login = (registerData) => dispatch => {
+  return fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/login", {
+    method: "GET",
+    headers: {
+      "Authorization": `Basic ${  window.btoa(`${registerData.email  }:${  registerData.password}`)}`,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+    }
+  })
+    .then((res) => {
+      let result;
+      if(res.status === 200){
+        result = res.json();
+        result.then(response =>{
+          localStorage.setItem("token", response.token);
+          dispatch({ type: LOGIN, payload: response.token });});
+      }
+      else {
+        result = res.text();
+        result.then(response=>{
+          dispatch({ type: LOGIN_FAIL, payload: response});
+        });
+      }});
+};
+
+export const register = (registerData) => dispatch => 
   fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/signup", {
     method: "POST",
     headers: {
@@ -80,34 +79,31 @@ export const register = (registerData) => dispatch =>
       }
     });
 
-export const login = (registerData) => dispatch => {
-  return fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/login", {
-    method: "GET",
+export const postQuestion = (questionData) => dispatch => 
+  fetch("https://stackoverflow-v2.herokuapp.com/api/v2/question", {
+    method: "POST",
     headers: {
-      "Authorization": `Basic ${window.btoa(`${registerData.email}:${registerData.password}`)}`,
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
-    }
+      "Accept": "application/json, text/plain, */*",
+      "Content-type": "application/json",
+      "x-access-token": localStorage.getItem("token")
+    },
+    body: JSON.stringify(questionData)
   })
     .then((res) => {
       let result;
-      if (res.status === 200) {
+      if(res.status === 201){
         result = res.json();
-        result.then(response => {
-          localStorage.setItem("token", response.token);
-          dispatch({ type: LOGIN, payload: response.token });
-        });
+        result.then(response =>{
+          dispatch({ type: POST, payload: response.message });});
       }
       else {
         result = res.text();
-        result.then(response => {
-          dispatch({ type: LOGIN_FAIL, payload: response });
+        result.then(response=>{
+          dispatch({ type: POST_FAIL, payload: response});
         });
-      }
-    });
-};
+      }});
 
-export const getOne = (id) => dispatch =>
+export const getOne = (id) => dispatch => 
   fetch(`https://stackoverflow-v2.herokuapp.com/api/v2/question/${id}`, {
     method: "GET",
     headers: {
@@ -117,16 +113,14 @@ export const getOne = (id) => dispatch =>
   })
     .then((res) => {
       let result;
-      if (res.status === 200) {
+      if(res.status === 200){
         result = res.json();
-        result.then(response => {
-          dispatch({ type: GET_ONE, payload: response });
-        });
+        result.then(response =>{
+          dispatch({ type: GET_ONE, payload: response });});
       }
       else {
         result = res.text();
-        result.then(response => {
-          dispatch({ type: GET_ONE_FAIL, payload: response });
+        result.then(response=>{
+          dispatch({ type: GET_ONE_FAIL, payload: response});
         });
-      }
-    });
+      }});

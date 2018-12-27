@@ -1,0 +1,5331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content /> should render without crashing 1`] = `
+ReactWrapper {
+  Symbol(enzyme.__unrendered__): <CreateQuestion
+    postQuestion={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": CreateQuestion {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 50,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 49,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "postQuestion": [MockFunction],
+            },
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {
+              "postQuestion": [MockFunction],
+            },
+          },
+          "mode": 0,
+          "nextEffect": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                  Object {
+                    "postQuestion": [MockFunction],
+                  }
+                }
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div>
+                  <h1>
+                    Create Question
+                  </h1>
+                  <form>
+                    <div
+                      class="form-group"
+                    >
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputTitle"
+                      >
+                        Question Title
+                      </label>
+                      <input
+                        class="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputBody"
+                      >
+                        Question Description
+                      </label>
+                      <textarea
+                        class="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                      />
+                    </div>
+                    <div
+                      class="text-center"
+                    >
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Array [],
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Array [],
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "postQuestion": [MockFunction],
+            },
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                  Object {
+                    "postQuestion": [MockFunction],
+                  }
+                }
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div>
+                  <h1>
+                    Create Question
+                  </h1>
+                  <form>
+                    <div
+                      class="form-group"
+                    >
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputTitle"
+                      >
+                        Question Title
+                      </label>
+                      <input
+                        class="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputBody"
+                      >
+                        Question Description
+                      </label>
+                      <textarea
+                        class="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                      />
+                    </div>
+                    <div
+                      class="text-center"
+                    >
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Array [],
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Array [],
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "actualDuration": 0,
+        "actualStartTime": -1,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 51,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 52,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": null,
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "elementType": "h1",
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": "Create Question",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": "Create Question",
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": FiberNode {
+              "_debugID": 53,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 54,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 56,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": null,
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "label",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": "Question Title",
+                    "className": "col-form-label col-form-label-lg",
+                    "htmlFor": "inputTitle",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": "Question Title",
+                    "className": "col-form-label col-form-label-lg",
+                    "htmlFor": "inputTitle",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 57,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "input",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "className": "form-control form-control-lg",
+                      "id": "inputTitle",
+                      "name": "title",
+                      "onChange": [Function],
+                      "placeholder": "Enter Question Title",
+                      "type": "text",
+                      "value": "",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "className": "form-control form-control-lg",
+                      "id": "inputTitle",
+                      "name": "title",
+                      "onChange": [Function],
+                      "placeholder": "Enter Question Title",
+                      "type": "text",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 58,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "label",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 2,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "Question Description",
+                        "className": "col-form-label col-form-label-lg",
+                        "htmlFor": "inputBody",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": "Question Description",
+                        "className": "col-form-label col-form-label-lg",
+                        "htmlFor": "inputBody",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 59,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "elementType": "textarea",
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 3,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "className": "form-control form-control-lg",
+                          "id": "inputBody",
+                          "name": "body",
+                          "onChange": [Function],
+                          "placeholder": "Enter Question Description",
+                          "rows": "15",
+                          "type": "password",
+                          "value": "",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "className": "form-control form-control-lg",
+                          "id": "inputBody",
+                          "name": "body",
+                          "onChange": [Function],
+                          "placeholder": "Enter Question Description",
+                          "rows": "15",
+                          "type": "password",
+                          "value": "",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": null,
+                        "stateNode": <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />,
+                        "tag": 5,
+                        "treeBaseDuration": 0,
+                        "type": "textarea",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputBody"
+                      >
+                        Question Description
+                      </label>,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "label",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <input
+                      class="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "input",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputTitle"
+                  >
+                    Question Title
+                  </label>,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "label",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "div",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputTitle"
+                    >
+                      Question Title
+                    </label>,
+                    <input
+                      className="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      onChange={[Function]}
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />,
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputBody"
+                    >
+                      Question Description
+                    </label>,
+                    <textarea
+                      className="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      onChange={[Function]}
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                      value=""
+                    />,
+                  ],
+                  "className": "form-group",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputTitle"
+                    >
+                      Question Title
+                    </label>,
+                    <input
+                      className="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      onChange={[Function]}
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />,
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputBody"
+                    >
+                      Question Description
+                    </label>,
+                    <textarea
+                      className="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      onChange={[Function]}
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                      value=""
+                    />,
+                  ],
+                  "className": "form-group",
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": FiberNode {
+                  "_debugID": 55,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 60,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "button",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "Create Question",
+                      "className": "btn btn-primary",
+                      "type": "submit",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": "Create Question",
+                      "className": "btn btn-primary",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": <button
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "button",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "div",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 1,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": <button
+                      className="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>,
+                    "className": "text-center",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": <button
+                      className="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>,
+                    "className": "text-center",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": null,
+                  "stateNode": <div
+                    class="text-center"
+                  >
+                    <button
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>
+                  </div>,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "stateNode": <div
+                  class="form-group"
+                >
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputTitle"
+                  >
+                    Question Title
+                  </label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputBody"
+                  >
+                    Question Description
+                  </label>
+                  <textarea
+                    class="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                  />
+                </div>,
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "form",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <div
+                    className="form-group"
+                  >
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputTitle"
+                    >
+                      Question Title
+                    </label>
+                    <input
+                      className="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      onChange={[Function]}
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputBody"
+                    >
+                      Question Description
+                    </label>
+                    <textarea
+                      className="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      onChange={[Function]}
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                      value=""
+                    />
+                  </div>,
+                  <div
+                    className="text-center"
+                  >
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>
+                  </div>,
+                ],
+                "onSubmit": [Function],
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  <div
+                    className="form-group"
+                  >
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputTitle"
+                    >
+                      Question Title
+                    </label>
+                    <input
+                      className="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      onChange={[Function]}
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputBody"
+                    >
+                      Question Description
+                    </label>
+                    <textarea
+                      className="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      onChange={[Function]}
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                      value=""
+                    />
+                  </div>,
+                  <div
+                    className="text-center"
+                  >
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>
+                  </div>,
+                ],
+                "onSubmit": [Function],
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": <form>
+                <div
+                  class="form-group"
+                >
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputTitle"
+                  >
+                    Question Title
+                  </label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputBody"
+                  >
+                    Question Description
+                  </label>
+                  <textarea
+                    class="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                  />
+                </div>
+                <div
+                  class="text-center"
+                >
+                  <button
+                    class="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>
+                </div>
+              </form>,
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "form",
+              "updateQueue": null,
+            },
+            "stateNode": <h1>
+              Create Question
+            </h1>,
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": "h1",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 0,
+          "elementType": "div",
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": Array [
+              <h1>
+                Create Question
+              </h1>,
+              <form
+                onSubmit={[Function]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputTitle"
+                  >
+                    Question Title
+                  </label>
+                  <input
+                    className="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    onChange={[Function]}
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputBody"
+                  >
+                    Question Description
+                  </label>
+                  <textarea
+                    className="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    onChange={[Function]}
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="text-center"
+                >
+                  <button
+                    className="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>
+                </div>
+              </form>,
+            ],
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": Array [
+              <h1>
+                Create Question
+              </h1>,
+              <form
+                onSubmit={[Function]}
+              >
+                <div
+                  className="form-group"
+                >
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputTitle"
+                  >
+                    Question Title
+                  </label>
+                  <input
+                    className="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    onChange={[Function]}
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputBody"
+                  >
+                    Question Description
+                  </label>
+                  <textarea
+                    className="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    onChange={[Function]}
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="text-center"
+                >
+                  <button
+                    className="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>
+                </div>
+              </form>,
+            ],
+          },
+          "ref": null,
+          "return": [Circular],
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": <div>
+            <h1>
+              Create Question
+            </h1>
+            <form>
+              <div
+                class="form-group"
+              >
+                <label
+                  class="col-form-label col-form-label-lg"
+                  for="inputTitle"
+                >
+                  Question Title
+                </label>
+                <input
+                  class="form-control form-control-lg"
+                  id="inputTitle"
+                  name="title"
+                  placeholder="Enter Question Title"
+                  type="text"
+                  value=""
+                />
+                <label
+                  class="col-form-label col-form-label-lg"
+                  for="inputBody"
+                >
+                  Question Description
+                </label>
+                <textarea
+                  class="form-control form-control-lg"
+                  id="inputBody"
+                  name="body"
+                  placeholder="Enter Question Description"
+                  rows="15"
+                  type="password"
+                />
+              </div>
+              <div
+                class="text-center"
+              >
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                >
+                  Create Question
+                </button>
+              </div>
+            </form>
+          </div>,
+          "tag": 5,
+          "treeBaseDuration": 0,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "childExpirationTime": 0,
+        "effectTag": 1,
+        "elementType": [Function],
+        "expirationTime": 0,
+        "firstContextDependency": null,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {
+          "postQuestion": [MockFunction],
+        },
+        "memoizedState": Object {
+          "body": "",
+          "title": "",
+        },
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {
+          "postQuestion": [MockFunction],
+        },
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 49,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": [Circular],
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "postQuestion": [MockFunction],
+            },
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {
+              "postQuestion": [MockFunction],
+            },
+          },
+          "mode": 0,
+          "nextEffect": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                  Object {
+                    "postQuestion": [MockFunction],
+                  }
+                }
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div>
+                  <h1>
+                    Create Question
+                  </h1>
+                  <form>
+                    <div
+                      class="form-group"
+                    >
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputTitle"
+                      >
+                        Question Title
+                      </label>
+                      <input
+                        class="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputBody"
+                      >
+                        Question Description
+                      </label>
+                      <textarea
+                        class="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                      />
+                    </div>
+                    <div
+                      class="text-center"
+                    >
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Array [],
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Array [],
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "postQuestion": [MockFunction],
+            },
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 47,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": [Circular],
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": null,
+              "expirationTime": 1073741823,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": Object {
+                  "callback": null,
+                  "expirationTime": 1073741823,
+                  "next": null,
+                  "nextEffect": null,
+                  "payload": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "postQuestion": [MockFunction],
+                        }
+                      }
+                    />,
+                  },
+                  "tag": 0,
+                },
+              },
+            },
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 32,
+            "elementType": null,
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                  Object {
+                    "postQuestion": [MockFunction],
+                  }
+                }
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div>
+                  <h1>
+                    Create Question
+                  </h1>
+                  <form>
+                    <div
+                      class="form-group"
+                    >
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputTitle"
+                      >
+                        Question Title
+                      </label>
+                      <input
+                        class="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />
+                      <label
+                        class="col-form-label col-form-label-lg"
+                        for="inputBody"
+                      >
+                        Question Description
+                      </label>
+                      <textarea
+                        class="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                      />
+                    </div>
+                    <div
+                      class="text-center"
+                    >
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "didError": false,
+              "earliestPendingTime": 0,
+              "earliestSuspendedTime": 0,
+              "expirationTime": 0,
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "interactionThreadID": 12,
+              "latestPendingTime": 0,
+              "latestPingedTime": 0,
+              "latestSuspendedTime": 0,
+              "memoizedInteractions": Array [],
+              "nextExpirationTimeToWorkOn": 0,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "pendingInteractionMap": Array [],
+              "pingCache": null,
+              "timeoutHandle": -1,
+            },
+            "tag": 3,
+            "treeBaseDuration": 0,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "firstCapturedEffect": null,
+              "firstCapturedUpdate": null,
+              "firstEffect": null,
+              "firstUpdate": null,
+              "lastCapturedEffect": null,
+              "lastCapturedUpdate": null,
+              "lastEffect": null,
+              "lastUpdate": null,
+            },
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "selfBaseDuration": 0,
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 1,
+        "treeBaseDuration": 0,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "onChange": [Function],
+      "onSubmit": [Function],
+      "props": Object {
+        "postQuestion": [MockFunction],
+      },
+      "refs": Object {},
+      "state": Object {
+        "body": "",
+        "title": "",
+      },
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "postQuestion": [MockFunction],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div>
+        <h1>
+          Create Question
+        </h1>
+        <form>
+          <div
+            class="form-group"
+          >
+            <label
+              class="col-form-label col-form-label-lg"
+              for="inputTitle"
+            >
+              Question Title
+            </label>
+            <input
+              class="form-control form-control-lg"
+              id="inputTitle"
+              name="title"
+              placeholder="Enter Question Title"
+              type="text"
+              value=""
+            />
+            <label
+              class="col-form-label col-form-label-lg"
+              for="inputBody"
+            >
+              Question Description
+            </label>
+            <textarea
+              class="form-control form-control-lg"
+              id="inputBody"
+              name="body"
+              placeholder="Enter Question Description"
+              rows="15"
+              type="password"
+            />
+          </div>
+          <div
+            class="text-center"
+          >
+            <button
+              class="btn btn-primary"
+              type="submit"
+            >
+              Create Question
+            </button>
+          </div>
+        </form>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Create Question
+          </h1>,
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="form-group"
+            >
+              <label
+                className="col-form-label col-form-label-lg"
+                htmlFor="inputTitle"
+              >
+                Question Title
+              </label>
+              <input
+                className="form-control form-control-lg"
+                id="inputTitle"
+                name="title"
+                onChange={[Function]}
+                placeholder="Enter Question Title"
+                type="text"
+                value=""
+              />
+              <label
+                className="col-form-label col-form-label-lg"
+                htmlFor="inputBody"
+              >
+                Question Description
+              </label>
+              <textarea
+                className="form-control form-control-lg"
+                id="inputBody"
+                name="body"
+                onChange={[Function]}
+                placeholder="Enter Question Description"
+                rows="15"
+                type="password"
+                value=""
+              />
+            </div>
+            <div
+              className="text-center"
+            >
+              <button
+                className="btn btn-primary"
+                type="submit"
+              >
+                Create Question
+              </button>
+            </div>
+          </form>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <h1>
+            Create Question
+          </h1>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Create Question",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Create Question",
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": <form>
+            <div
+              class="form-group"
+            >
+              <label
+                class="col-form-label col-form-label-lg"
+                for="inputTitle"
+              >
+                Question Title
+              </label>
+              <input
+                class="form-control form-control-lg"
+                id="inputTitle"
+                name="title"
+                placeholder="Enter Question Title"
+                type="text"
+                value=""
+              />
+              <label
+                class="col-form-label col-form-label-lg"
+                for="inputBody"
+              >
+                Question Description
+              </label>
+              <textarea
+                class="form-control form-control-lg"
+                id="inputBody"
+                name="body"
+                placeholder="Enter Question Description"
+                rows="15"
+                type="password"
+              />
+            </div>
+            <div
+              class="text-center"
+            >
+              <button
+                class="btn btn-primary"
+                type="submit"
+              >
+                Create Question
+              </button>
+            </div>
+          </form>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="form-group"
+              >
+                <label
+                  className="col-form-label col-form-label-lg"
+                  htmlFor="inputTitle"
+                >
+                  Question Title
+                </label>
+                <input
+                  className="form-control form-control-lg"
+                  id="inputTitle"
+                  name="title"
+                  onChange={[Function]}
+                  placeholder="Enter Question Title"
+                  type="text"
+                  value=""
+                />
+                <label
+                  className="col-form-label col-form-label-lg"
+                  htmlFor="inputBody"
+                >
+                  Question Description
+                </label>
+                <textarea
+                  className="form-control form-control-lg"
+                  id="inputBody"
+                  name="body"
+                  onChange={[Function]}
+                  placeholder="Enter Question Description"
+                  rows="15"
+                  type="password"
+                  value=""
+                />
+              </div>,
+              <div
+                className="text-center"
+              >
+                <button
+                  className="btn btn-primary"
+                  type="submit"
+                >
+                  Create Question
+                </button>
+              </div>,
+            ],
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="form-group"
+              >
+                <label
+                  class="col-form-label col-form-label-lg"
+                  for="inputTitle"
+                >
+                  Question Title
+                </label>
+                <input
+                  class="form-control form-control-lg"
+                  id="inputTitle"
+                  name="title"
+                  placeholder="Enter Question Title"
+                  type="text"
+                  value=""
+                />
+                <label
+                  class="col-form-label col-form-label-lg"
+                  for="inputBody"
+                >
+                  Question Description
+                </label>
+                <textarea
+                  class="form-control form-control-lg"
+                  id="inputBody"
+                  name="body"
+                  placeholder="Enter Question Description"
+                  rows="15"
+                  type="password"
+                />
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputTitle"
+                  >
+                    Question Title
+                  </label>,
+                  <input
+                    className="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    onChange={[Function]}
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />,
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputBody"
+                  >
+                    Question Description
+                  </label>,
+                  <textarea
+                    className="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    onChange={[Function]}
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                    value=""
+                  />,
+                ],
+                "className": "form-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputTitle"
+                  >
+                    Question Title
+                  </label>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Question Title",
+                    "className": "col-form-label col-form-label-lg",
+                    "htmlFor": "inputTitle",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Question Title",
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": <input
+                    class="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-control form-control-lg",
+                    "id": "inputTitle",
+                    "name": "title",
+                    "onChange": [Function],
+                    "placeholder": "Enter Question Title",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "input",
+                },
+                Object {
+                  "instance": <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputBody"
+                  >
+                    Question Description
+                  </label>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Question Description",
+                    "className": "col-form-label col-form-label-lg",
+                    "htmlFor": "inputBody",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Question Description",
+                  ],
+                  "type": "label",
+                },
+                Object {
+                  "instance": <textarea
+                    class="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                  />,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "form-control form-control-lg",
+                    "id": "inputBody",
+                    "name": "body",
+                    "onChange": [Function],
+                    "placeholder": "Enter Question Description",
+                    "rows": "15",
+                    "type": "password",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    undefined,
+                  ],
+                  "type": "textarea",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": <div
+                class="text-center"
+              >
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                >
+                  Create Question
+                </button>
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn-primary"
+                  type="submit"
+                >
+                  Create Question
+                </button>,
+                "className": "text-center",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <button
+                    class="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Create Question",
+                    "className": "btn btn-primary",
+                    "type": "submit",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Create Question",
+                  ],
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": CreateQuestion {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 50,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 49,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "elementType": [Function],
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "mode": 0,
+            "nextEffect": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div>
+                      <h1>
+                        Create Question
+                      </h1>
+                      <form>
+                        <div
+                          class="form-group"
+                        >
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputTitle"
+                          >
+                            Question Title
+                          </label>
+                          <input
+                            class="form-control form-control-lg"
+                            id="inputTitle"
+                            name="title"
+                            placeholder="Enter Question Title"
+                            type="text"
+                            value=""
+                          />
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputBody"
+                          >
+                            Question Description
+                          </label>
+                          <textarea
+                            class="form-control form-control-lg"
+                            id="inputBody"
+                            name="body"
+                            placeholder="Enter Question Description"
+                            rows="15"
+                            type="password"
+                          />
+                        </div>
+                        <div
+                          class="text-center"
+                        >
+                          <button
+                            class="btn btn-primary"
+                            type="submit"
+                          >
+                            Create Question
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Array [],
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Array [],
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={
+                      Object {
+                        "postQuestion": [MockFunction],
+                      }
+                    }
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div>
+                      <h1>
+                        Create Question
+                      </h1>
+                      <form>
+                        <div
+                          class="form-group"
+                        >
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputTitle"
+                          >
+                            Question Title
+                          </label>
+                          <input
+                            class="form-control form-control-lg"
+                            id="inputTitle"
+                            name="title"
+                            placeholder="Enter Question Title"
+                            type="text"
+                            value=""
+                          />
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputBody"
+                          >
+                            Question Description
+                          </label>
+                          <textarea
+                            class="form-control form-control-lg"
+                            id="inputBody"
+                            name="body"
+                            placeholder="Enter Question Description"
+                            rows="15"
+                            type="password"
+                          />
+                        </div>
+                        <div
+                          class="text-center"
+                        >
+                          <button
+                            class="btn btn-primary"
+                            type="submit"
+                          >
+                            Create Question
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Array [],
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Array [],
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={
+                      Object {
+                        "postQuestion": [MockFunction],
+                      }
+                    }
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {
+                  "postQuestion": [MockFunction],
+                },
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {
+                  "postQuestion": [MockFunction],
+                },
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 1,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "actualDuration": 0,
+          "actualStartTime": -1,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 51,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 52,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": null,
+              "child": null,
+              "childExpirationTime": 0,
+              "effectTag": 0,
+              "elementType": "h1",
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": "Create Question",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": "Create Question",
+              },
+              "ref": null,
+              "return": [Circular],
+              "selfBaseDuration": 0,
+              "sibling": FiberNode {
+                "_debugID": 53,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 54,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "actualDuration": 0,
+                  "actualStartTime": -1,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 56,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": null,
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "label",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "Question Title",
+                      "className": "col-form-label col-form-label-lg",
+                      "htmlFor": "inputTitle",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": "Question Title",
+                      "className": "col-form-label col-form-label-lg",
+                      "htmlFor": "inputTitle",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": FiberNode {
+                      "_debugID": 57,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "input",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 1,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "className": "form-control form-control-lg",
+                        "id": "inputTitle",
+                        "name": "title",
+                        "onChange": [Function],
+                        "placeholder": "Enter Question Title",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "className": "form-control form-control-lg",
+                        "id": "inputTitle",
+                        "name": "title",
+                        "onChange": [Function],
+                        "placeholder": "Enter Question Title",
+                        "type": "text",
+                        "value": "",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": FiberNode {
+                        "_debugID": 58,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": [Circular],
+                        "_debugSource": null,
+                        "actualDuration": 0,
+                        "actualStartTime": -1,
+                        "alternate": null,
+                        "child": null,
+                        "childExpirationTime": 0,
+                        "effectTag": 0,
+                        "elementType": "label",
+                        "expirationTime": 0,
+                        "firstContextDependency": null,
+                        "firstEffect": null,
+                        "index": 2,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": Object {
+                          "children": "Question Description",
+                          "className": "col-form-label col-form-label-lg",
+                          "htmlFor": "inputBody",
+                        },
+                        "memoizedState": null,
+                        "mode": 0,
+                        "nextEffect": null,
+                        "pendingProps": Object {
+                          "children": "Question Description",
+                          "className": "col-form-label col-form-label-lg",
+                          "htmlFor": "inputBody",
+                        },
+                        "ref": null,
+                        "return": [Circular],
+                        "selfBaseDuration": 0,
+                        "sibling": FiberNode {
+                          "_debugID": 59,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": [Circular],
+                          "_debugSource": null,
+                          "actualDuration": 0,
+                          "actualStartTime": -1,
+                          "alternate": null,
+                          "child": null,
+                          "childExpirationTime": 0,
+                          "effectTag": 0,
+                          "elementType": "textarea",
+                          "expirationTime": 0,
+                          "firstContextDependency": null,
+                          "firstEffect": null,
+                          "index": 3,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": Object {
+                            "className": "form-control form-control-lg",
+                            "id": "inputBody",
+                            "name": "body",
+                            "onChange": [Function],
+                            "placeholder": "Enter Question Description",
+                            "rows": "15",
+                            "type": "password",
+                            "value": "",
+                          },
+                          "memoizedState": null,
+                          "mode": 0,
+                          "nextEffect": null,
+                          "pendingProps": Object {
+                            "className": "form-control form-control-lg",
+                            "id": "inputBody",
+                            "name": "body",
+                            "onChange": [Function],
+                            "placeholder": "Enter Question Description",
+                            "rows": "15",
+                            "type": "password",
+                            "value": "",
+                          },
+                          "ref": null,
+                          "return": [Circular],
+                          "selfBaseDuration": 0,
+                          "sibling": null,
+                          "stateNode": <textarea
+                            class="form-control form-control-lg"
+                            id="inputBody"
+                            name="body"
+                            placeholder="Enter Question Description"
+                            rows="15"
+                            type="password"
+                          />,
+                          "tag": 5,
+                          "treeBaseDuration": 0,
+                          "type": "textarea",
+                          "updateQueue": null,
+                        },
+                        "stateNode": <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>,
+                        "tag": 5,
+                        "treeBaseDuration": 0,
+                        "type": "label",
+                        "updateQueue": null,
+                      },
+                      "stateNode": <input
+                        class="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "input",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <label
+                      class="col-form-label col-form-label-lg"
+                      for="inputTitle"
+                    >
+                      Question Title
+                    </label>,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "label",
+                    "updateQueue": null,
+                  },
+                  "childExpirationTime": 0,
+                  "effectTag": 0,
+                  "elementType": "div",
+                  "expirationTime": 0,
+                  "firstContextDependency": null,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputTitle"
+                      >
+                        Question Title
+                      </label>,
+                      <input
+                        className="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        onChange={[Function]}
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />,
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputBody"
+                      >
+                        Question Description
+                      </label>,
+                      <textarea
+                        className="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        onChange={[Function]}
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                        value=""
+                      />,
+                    ],
+                    "className": "form-group",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": Array [
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputTitle"
+                      >
+                        Question Title
+                      </label>,
+                      <input
+                        className="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        onChange={[Function]}
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />,
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputBody"
+                      >
+                        Question Description
+                      </label>,
+                      <textarea
+                        className="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        onChange={[Function]}
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                        value=""
+                      />,
+                    ],
+                    "className": "form-group",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "selfBaseDuration": 0,
+                  "sibling": FiberNode {
+                    "_debugID": 55,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "actualDuration": 0,
+                    "actualStartTime": -1,
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugID": 60,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "actualDuration": 0,
+                      "actualStartTime": -1,
+                      "alternate": null,
+                      "child": null,
+                      "childExpirationTime": 0,
+                      "effectTag": 0,
+                      "elementType": "button",
+                      "expirationTime": 0,
+                      "firstContextDependency": null,
+                      "firstEffect": null,
+                      "index": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "Create Question",
+                        "className": "btn btn-primary",
+                        "type": "submit",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": "Create Question",
+                        "className": "btn btn-primary",
+                        "type": "submit",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "selfBaseDuration": 0,
+                      "sibling": null,
+                      "stateNode": <button
+                        class="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>,
+                      "tag": 5,
+                      "treeBaseDuration": 0,
+                      "type": "button",
+                      "updateQueue": null,
+                    },
+                    "childExpirationTime": 0,
+                    "effectTag": 0,
+                    "elementType": "div",
+                    "expirationTime": 0,
+                    "firstContextDependency": null,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": <button
+                        className="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>,
+                      "className": "text-center",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": <button
+                        className="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>,
+                      "className": "text-center",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "selfBaseDuration": 0,
+                    "sibling": null,
+                    "stateNode": <div
+                      class="text-center"
+                    >
+                      <button
+                        class="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>
+                    </div>,
+                    "tag": 5,
+                    "treeBaseDuration": 0,
+                    "type": "div",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <div
+                    class="form-group"
+                  >
+                    <label
+                      class="col-form-label col-form-label-lg"
+                      for="inputTitle"
+                    >
+                      Question Title
+                    </label>
+                    <input
+                      class="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />
+                    <label
+                      class="col-form-label col-form-label-lg"
+                      for="inputBody"
+                    >
+                      Question Description
+                    </label>
+                    <textarea
+                      class="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                    />
+                  </div>,
+                  "tag": 5,
+                  "treeBaseDuration": 0,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": "form",
+                "expirationTime": 0,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <div
+                      className="form-group"
+                    >
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputTitle"
+                      >
+                        Question Title
+                      </label>
+                      <input
+                        className="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        onChange={[Function]}
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputBody"
+                      >
+                        Question Description
+                      </label>
+                      <textarea
+                        className="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        onChange={[Function]}
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                        value=""
+                      />
+                    </div>,
+                    <div
+                      className="text-center"
+                    >
+                      <button
+                        className="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>
+                    </div>,
+                  ],
+                  "onSubmit": [Function],
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <div
+                      className="form-group"
+                    >
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputTitle"
+                      >
+                        Question Title
+                      </label>
+                      <input
+                        className="form-control form-control-lg"
+                        id="inputTitle"
+                        name="title"
+                        onChange={[Function]}
+                        placeholder="Enter Question Title"
+                        type="text"
+                        value=""
+                      />
+                      <label
+                        className="col-form-label col-form-label-lg"
+                        htmlFor="inputBody"
+                      >
+                        Question Description
+                      </label>
+                      <textarea
+                        className="form-control form-control-lg"
+                        id="inputBody"
+                        name="body"
+                        onChange={[Function]}
+                        placeholder="Enter Question Description"
+                        rows="15"
+                        type="password"
+                        value=""
+                      />
+                    </div>,
+                    <div
+                      className="text-center"
+                    >
+                      <button
+                        className="btn btn-primary"
+                        type="submit"
+                      >
+                        Create Question
+                      </button>
+                    </div>,
+                  ],
+                  "onSubmit": [Function],
+                },
+                "ref": null,
+                "return": [Circular],
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": <form>
+                  <div
+                    class="form-group"
+                  >
+                    <label
+                      class="col-form-label col-form-label-lg"
+                      for="inputTitle"
+                    >
+                      Question Title
+                    </label>
+                    <input
+                      class="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />
+                    <label
+                      class="col-form-label col-form-label-lg"
+                      for="inputBody"
+                    >
+                      Question Description
+                    </label>
+                    <textarea
+                      class="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                    />
+                  </div>
+                  <div
+                    class="text-center"
+                  >
+                    <button
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>
+                  </div>
+                </form>,
+                "tag": 5,
+                "treeBaseDuration": 0,
+                "type": "form",
+                "updateQueue": null,
+              },
+              "stateNode": <h1>
+                Create Question
+              </h1>,
+              "tag": 5,
+              "treeBaseDuration": 0,
+              "type": "h1",
+              "updateQueue": null,
+            },
+            "childExpirationTime": 0,
+            "effectTag": 0,
+            "elementType": "div",
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                <h1>
+                  Create Question
+                </h1>,
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputTitle"
+                    >
+                      Question Title
+                    </label>
+                    <input
+                      className="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      onChange={[Function]}
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputBody"
+                    >
+                      Question Description
+                    </label>
+                    <textarea
+                      className="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      onChange={[Function]}
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="text-center"
+                  >
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>
+                  </div>
+                </form>,
+              ],
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": Array [
+                <h1>
+                  Create Question
+                </h1>,
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div
+                    className="form-group"
+                  >
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputTitle"
+                    >
+                      Question Title
+                    </label>
+                    <input
+                      className="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      onChange={[Function]}
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputBody"
+                    >
+                      Question Description
+                    </label>
+                    <textarea
+                      className="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      onChange={[Function]}
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                      value=""
+                    />
+                  </div>
+                  <div
+                    className="text-center"
+                  >
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>
+                  </div>
+                </form>,
+              ],
+            },
+            "ref": null,
+            "return": [Circular],
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": <div>
+              <h1>
+                Create Question
+              </h1>
+              <form>
+                <div
+                  class="form-group"
+                >
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputTitle"
+                  >
+                    Question Title
+                  </label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputBody"
+                  >
+                    Question Description
+                  </label>
+                  <textarea
+                    class="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                  />
+                </div>
+                <div
+                  class="text-center"
+                >
+                  <button
+                    class="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>
+                </div>
+              </form>
+            </div>,
+            "tag": 5,
+            "treeBaseDuration": 0,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "childExpirationTime": 0,
+          "effectTag": 1,
+          "elementType": [Function],
+          "expirationTime": 0,
+          "firstContextDependency": null,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "postQuestion": [MockFunction],
+          },
+          "memoizedState": Object {
+            "body": "",
+            "title": "",
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "postQuestion": [MockFunction],
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 49,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "actualDuration": 0,
+            "actualStartTime": -1,
+            "alternate": null,
+            "child": [Circular],
+            "childExpirationTime": 0,
+            "effectTag": 1,
+            "elementType": [Function],
+            "expirationTime": 0,
+            "firstContextDependency": null,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "mode": 0,
+            "nextEffect": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div>
+                      <h1>
+                        Create Question
+                      </h1>
+                      <form>
+                        <div
+                          class="form-group"
+                        >
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputTitle"
+                          >
+                            Question Title
+                          </label>
+                          <input
+                            class="form-control form-control-lg"
+                            id="inputTitle"
+                            name="title"
+                            placeholder="Enter Question Title"
+                            type="text"
+                            value=""
+                          />
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputBody"
+                          >
+                            Question Description
+                          </label>
+                          <textarea
+                            class="form-control form-control-lg"
+                            id="inputBody"
+                            name="body"
+                            placeholder="Enter Question Description"
+                            rows="15"
+                            type="password"
+                          />
+                        </div>
+                        <div
+                          class="text-center"
+                        >
+                          <button
+                            class="btn btn-primary"
+                            type="submit"
+                          >
+                            Create Question
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Array [],
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Array [],
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={
+                      Object {
+                        "postQuestion": [MockFunction],
+                      }
+                    }
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "postQuestion": [MockFunction],
+              },
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 47,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "actualDuration": 0,
+              "actualStartTime": -1,
+              "alternate": FiberNode {
+                "_debugID": 47,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "actualDuration": 0,
+                "actualStartTime": -1,
+                "alternate": [Circular],
+                "child": null,
+                "childExpirationTime": 0,
+                "effectTag": 0,
+                "elementType": null,
+                "expirationTime": 1073741823,
+                "firstContextDependency": null,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "selfBaseDuration": 0,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div>
+                      <h1>
+                        Create Question
+                      </h1>
+                      <form>
+                        <div
+                          class="form-group"
+                        >
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputTitle"
+                          >
+                            Question Title
+                          </label>
+                          <input
+                            class="form-control form-control-lg"
+                            id="inputTitle"
+                            name="title"
+                            placeholder="Enter Question Title"
+                            type="text"
+                            value=""
+                          />
+                          <label
+                            class="col-form-label col-form-label-lg"
+                            for="inputBody"
+                          >
+                            Question Description
+                          </label>
+                          <textarea
+                            class="form-control form-control-lg"
+                            id="inputBody"
+                            name="body"
+                            placeholder="Enter Question Description"
+                            rows="15"
+                            type="password"
+                          />
+                        </div>
+                        <div
+                          class="text-center"
+                        >
+                          <button
+                            class="btn btn-primary"
+                            type="submit"
+                          >
+                            Create Question
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "didError": false,
+                  "earliestPendingTime": 0,
+                  "earliestSuspendedTime": 0,
+                  "expirationTime": 0,
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "interactionThreadID": 12,
+                  "latestPendingTime": 0,
+                  "latestPingedTime": 0,
+                  "latestSuspendedTime": 0,
+                  "memoizedInteractions": Array [],
+                  "nextExpirationTimeToWorkOn": 0,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "pendingInteractionMap": Array [],
+                  "pingCache": null,
+                  "timeoutHandle": -1,
+                },
+                "tag": 3,
+                "treeBaseDuration": 0,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "firstCapturedEffect": null,
+                  "firstCapturedUpdate": null,
+                  "firstEffect": null,
+                  "firstUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                  "lastCapturedEffect": null,
+                  "lastCapturedUpdate": null,
+                  "lastEffect": null,
+                  "lastUpdate": Object {
+                    "callback": null,
+                    "expirationTime": 1073741823,
+                    "next": null,
+                    "nextEffect": null,
+                    "payload": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "postQuestion": [MockFunction],
+                          }
+                        }
+                      />,
+                    },
+                    "tag": 0,
+                  },
+                },
+              },
+              "child": [Circular],
+              "childExpirationTime": 0,
+              "effectTag": 32,
+              "elementType": null,
+              "expirationTime": 0,
+              "firstContextDependency": null,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "postQuestion": [MockFunction],
+                    }
+                  }
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "selfBaseDuration": 0,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div>
+                    <h1>
+                      Create Question
+                    </h1>
+                    <form>
+                      <div
+                        class="form-group"
+                      >
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputTitle"
+                        >
+                          Question Title
+                        </label>
+                        <input
+                          class="form-control form-control-lg"
+                          id="inputTitle"
+                          name="title"
+                          placeholder="Enter Question Title"
+                          type="text"
+                          value=""
+                        />
+                        <label
+                          class="col-form-label col-form-label-lg"
+                          for="inputBody"
+                        >
+                          Question Description
+                        </label>
+                        <textarea
+                          class="form-control form-control-lg"
+                          id="inputBody"
+                          name="body"
+                          placeholder="Enter Question Description"
+                          rows="15"
+                          type="password"
+                        />
+                      </div>
+                      <div
+                        class="text-center"
+                      >
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                        >
+                          Create Question
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "didError": false,
+                "earliestPendingTime": 0,
+                "earliestSuspendedTime": 0,
+                "expirationTime": 0,
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "interactionThreadID": 12,
+                "latestPendingTime": 0,
+                "latestPingedTime": 0,
+                "latestSuspendedTime": 0,
+                "memoizedInteractions": Array [],
+                "nextExpirationTimeToWorkOn": 0,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "pendingInteractionMap": Array [],
+                "pingCache": null,
+                "timeoutHandle": -1,
+              },
+              "tag": 3,
+              "treeBaseDuration": 0,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={
+                      Object {
+                        "postQuestion": [MockFunction],
+                      }
+                    }
+                  />,
+                },
+                "firstCapturedEffect": null,
+                "firstCapturedUpdate": null,
+                "firstEffect": null,
+                "firstUpdate": null,
+                "lastCapturedEffect": null,
+                "lastCapturedUpdate": null,
+                "lastEffect": null,
+                "lastUpdate": null,
+              },
+            },
+            "selfBaseDuration": 0,
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {
+                  "postQuestion": [MockFunction],
+                },
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {
+                  "postQuestion": [MockFunction],
+                },
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 1,
+            "treeBaseDuration": 0,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "selfBaseDuration": 0,
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 1,
+          "treeBaseDuration": 0,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "onChange": [Function],
+        "onSubmit": [Function],
+        "props": Object {
+          "postQuestion": [MockFunction],
+        },
+        "refs": Object {},
+        "state": Object {
+          "body": "",
+          "title": "",
+        },
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "postQuestion": [MockFunction],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div>
+          <h1>
+            Create Question
+          </h1>
+          <form>
+            <div
+              class="form-group"
+            >
+              <label
+                class="col-form-label col-form-label-lg"
+                for="inputTitle"
+              >
+                Question Title
+              </label>
+              <input
+                class="form-control form-control-lg"
+                id="inputTitle"
+                name="title"
+                placeholder="Enter Question Title"
+                type="text"
+                value=""
+              />
+              <label
+                class="col-form-label col-form-label-lg"
+                for="inputBody"
+              >
+                Question Description
+              </label>
+              <textarea
+                class="form-control form-control-lg"
+                id="inputBody"
+                name="body"
+                placeholder="Enter Question Description"
+                rows="15"
+                type="password"
+              />
+            </div>
+            <div
+              class="text-center"
+            >
+              <button
+                class="btn btn-primary"
+                type="submit"
+              >
+                Create Question
+              </button>
+            </div>
+          </form>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Create Question
+            </h1>,
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="form-group"
+              >
+                <label
+                  className="col-form-label col-form-label-lg"
+                  htmlFor="inputTitle"
+                >
+                  Question Title
+                </label>
+                <input
+                  className="form-control form-control-lg"
+                  id="inputTitle"
+                  name="title"
+                  onChange={[Function]}
+                  placeholder="Enter Question Title"
+                  type="text"
+                  value=""
+                />
+                <label
+                  className="col-form-label col-form-label-lg"
+                  htmlFor="inputBody"
+                >
+                  Question Description
+                </label>
+                <textarea
+                  className="form-control form-control-lg"
+                  id="inputBody"
+                  name="body"
+                  onChange={[Function]}
+                  placeholder="Enter Question Description"
+                  rows="15"
+                  type="password"
+                  value=""
+                />
+              </div>
+              <div
+                className="text-center"
+              >
+                <button
+                  className="btn btn-primary"
+                  type="submit"
+                >
+                  Create Question
+                </button>
+              </div>
+            </form>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <h1>
+              Create Question
+            </h1>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Create Question",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Create Question",
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": <form>
+              <div
+                class="form-group"
+              >
+                <label
+                  class="col-form-label col-form-label-lg"
+                  for="inputTitle"
+                >
+                  Question Title
+                </label>
+                <input
+                  class="form-control form-control-lg"
+                  id="inputTitle"
+                  name="title"
+                  placeholder="Enter Question Title"
+                  type="text"
+                  value=""
+                />
+                <label
+                  class="col-form-label col-form-label-lg"
+                  for="inputBody"
+                >
+                  Question Description
+                </label>
+                <textarea
+                  class="form-control form-control-lg"
+                  id="inputBody"
+                  name="body"
+                  placeholder="Enter Question Description"
+                  rows="15"
+                  type="password"
+                />
+              </div>
+              <div
+                class="text-center"
+              >
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                >
+                  Create Question
+                </button>
+              </div>
+            </form>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="form-group"
+                >
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputTitle"
+                  >
+                    Question Title
+                  </label>
+                  <input
+                    className="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    onChange={[Function]}
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    className="col-form-label col-form-label-lg"
+                    htmlFor="inputBody"
+                  >
+                    Question Description
+                  </label>
+                  <textarea
+                    className="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    onChange={[Function]}
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                    value=""
+                  />
+                </div>,
+                <div
+                  className="text-center"
+                >
+                  <button
+                    className="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>
+                </div>,
+              ],
+              "onSubmit": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <div
+                  class="form-group"
+                >
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputTitle"
+                  >
+                    Question Title
+                  </label>
+                  <input
+                    class="form-control form-control-lg"
+                    id="inputTitle"
+                    name="title"
+                    placeholder="Enter Question Title"
+                    type="text"
+                    value=""
+                  />
+                  <label
+                    class="col-form-label col-form-label-lg"
+                    for="inputBody"
+                  >
+                    Question Description
+                  </label>
+                  <textarea
+                    class="form-control form-control-lg"
+                    id="inputBody"
+                    name="body"
+                    placeholder="Enter Question Description"
+                    rows="15"
+                    type="password"
+                  />
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputTitle"
+                    >
+                      Question Title
+                    </label>,
+                    <input
+                      className="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      onChange={[Function]}
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />,
+                    <label
+                      className="col-form-label col-form-label-lg"
+                      htmlFor="inputBody"
+                    >
+                      Question Description
+                    </label>,
+                    <textarea
+                      className="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      onChange={[Function]}
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                      value=""
+                    />,
+                  ],
+                  "className": "form-group",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <label
+                      class="col-form-label col-form-label-lg"
+                      for="inputTitle"
+                    >
+                      Question Title
+                    </label>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Question Title",
+                      "className": "col-form-label col-form-label-lg",
+                      "htmlFor": "inputTitle",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Question Title",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": <input
+                      class="form-control form-control-lg"
+                      id="inputTitle"
+                      name="title"
+                      placeholder="Enter Question Title"
+                      type="text"
+                      value=""
+                    />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "form-control form-control-lg",
+                      "id": "inputTitle",
+                      "name": "title",
+                      "onChange": [Function],
+                      "placeholder": "Enter Question Title",
+                      "type": "text",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "input",
+                  },
+                  Object {
+                    "instance": <label
+                      class="col-form-label col-form-label-lg"
+                      for="inputBody"
+                    >
+                      Question Description
+                    </label>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Question Description",
+                      "className": "col-form-label col-form-label-lg",
+                      "htmlFor": "inputBody",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Question Description",
+                    ],
+                    "type": "label",
+                  },
+                  Object {
+                    "instance": <textarea
+                      class="form-control form-control-lg"
+                      id="inputBody"
+                      name="body"
+                      placeholder="Enter Question Description"
+                      rows="15"
+                      type="password"
+                    />,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "form-control form-control-lg",
+                      "id": "inputBody",
+                      "name": "body",
+                      "onChange": [Function],
+                      "placeholder": "Enter Question Description",
+                      "rows": "15",
+                      "type": "password",
+                      "value": "",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      undefined,
+                    ],
+                    "type": "textarea",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <div
+                  class="text-center"
+                >
+                  <button
+                    class="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <button
+                    className="btn btn-primary"
+                    type="submit"
+                  >
+                    Create Question
+                  </button>,
+                  "className": "text-center",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <button
+                      class="btn btn-primary"
+                      type="submit"
+                    >
+                      Create Question
+                    </button>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Create Question",
+                      "className": "btn btn-primary",
+                      "type": "submit",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Create Question",
+                    ],
+                    "type": "button",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "form",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

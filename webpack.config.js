@@ -1,15 +1,15 @@
 const path = require('path');
-const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'production';
 
 const config = {
   mode,
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: "bundle.js",
+    publicPath: "/"
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -27,13 +27,16 @@ const config = {
       {
         test: /\.(jpe?g|png|gif|svg|jpg|otf)$/i,
         use: ['file-loader'],
-      }
+      },
     ],
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   plugins: [
-   new HTMLWebpackPlugin({
-     template: './src/index.html',
-   }),
+    new HTMLWebpackPlugin({
+      template: './src/index.html',
+    }),
   ],
 };
 

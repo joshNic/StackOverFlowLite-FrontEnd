@@ -13,10 +13,10 @@ describe("<Content />", () => {
   const middlewares = [thunk];
   const mockStore = configureStore(middlewares);
   const initialUserState = {
-    questions: [],
-    question: {},
-    loading: true,
-    response: {}
+    questions:[],
+    question:{},
+    loading:true,
+    response:{}   
   };
 
   const store = mockStore({ ...initialUserState });
@@ -24,11 +24,11 @@ describe("<Content />", () => {
     title: "",
     body: "",
   };
-
+ 
   const editor = shallow(<GetOneQuestion loading={false} questions={[initialState]} getOne={jest.fn()} store={store} match={{ params: { id: 2 } }} />);
-
+  
   it("should render without crashing", () => {
-
+    
     expect(editor).toMatchSnapshot();
   });
 
