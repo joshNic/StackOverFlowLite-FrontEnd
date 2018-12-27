@@ -70,8 +70,8 @@ export const register = (registerData) => dispatch =>
       }
     });
 
-export const login = (registerData) => dispatch => {
-  return fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/login", {
+export const login = (registerData) => dispatch =>
+  fetch("https://stackoverflow-v2.herokuapp.com/api/v2/auth/login", {
     method: "GET",
     headers: {
       "Authorization": `Basic ${window.btoa(`${registerData.email}:${registerData.password}`)}`,
@@ -95,7 +95,7 @@ export const login = (registerData) => dispatch => {
         });
       }
     });
-};
+
 
 export const getOne = (id) => dispatch =>
   fetch(`https://stackoverflow-v2.herokuapp.com/api/v2/question/${id}`, {
