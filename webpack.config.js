@@ -1,32 +1,32 @@
-const path = require('path');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HTMLWebpackPlugin = require("html-webpack-plugin");
 
-const mode = process.env.NODE_ENV || 'production';
+const mode = process.env.NODE_ENV || "production";
 
 const config = {
   mode,
-  entry: './src/index.jsx',
+  entry: "./src/index.jsx",
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
     publicPath: "/"
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: [".js", ".jsx"],
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        use: ['babel-loader']
+        use: ["babel-loader"]
       },
       {
         test: /\.s?css/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(jpe?g|png|gif|svg|jpg|otf)$/i,
-        use: ['file-loader'],
+        use: ["file-loader"],
       },
     ],
   },
@@ -35,7 +35,7 @@ const config = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './src/index.html',
+      template: "./src/index.html",
     }),
   ],
 };
