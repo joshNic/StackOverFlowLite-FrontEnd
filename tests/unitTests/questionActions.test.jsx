@@ -4,7 +4,7 @@ import configureStore from "redux-mock-store";
 import thunk from "redux-thunk";
 import fetchMock from "fetch-mock";
 
-import { getAll, getOne, register, alert, login, postQuestion } from "../../src/actions/questionActions";
+import { logOut, getAll, getOne, register, alert, login, postQuestion } from "../../src/actions/questionActions";
 
 import { GET_ALL, GET_ONE, GET_ONE_FAIL, REGISTER_FAIL, POST, POST_FAIL, REGISTER, LOGIN, LOGIN_FAIL } from "../../src/actions/types";
 
@@ -110,13 +110,13 @@ describe("question action creators", () => {
 
 });
 
-describe("test alert", ()=>{
-  it ("tests alert success", () => {
-    alert("success",null,"cedric","random token");
+describe("test alert", () => {
+  it("tests alert success", () => {
+    alert("success", null, "cedric", "random token");
   });
-  it("test alert error", ()=>{
-    alert("error","this is an error message", null, null);
-      
+  it("test alert error", () => {
+    alert("error", "this is an error message", null, null);
+
   });
 });
 
@@ -217,6 +217,15 @@ describe("question action creators", () => {
     return store.dispatch(login(registerData)).then(() => {
       expect(store.getActions()).toEqual([]);
     });
+  });
+
+  it("post article action on LOG_OUT action type", () => {
+
+    // eslint-disable-next-line no-undef
+    store.dispatch(logOut());
+    return undefined;
+
+
   });
 });
 

@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-expressions */
 import toastr from "toastr";
 
-import { GET_ALL, LOGIN, LOGIN_FAIL, REGISTER, GET_ONE, GET_ONE_FAIL, POST, REGISTER_FAIL, POST_FAIL } from "./types";
+import { GET_ALL, LOGIN, LOGIN_FAIL, REGISTER, GET_ONE, GET_ONE_FAIL, POST, REGISTER_FAIL, POST_FAIL, LOG_OUT } from "./types";
 
-export const alert=(type,errorMsg,username, token, url)=>{
-  if(type === "error" || "success"  && !username && !token){
-    type === "success" ? toastr.success(errorMsg) && setTimeout(() => window.location.replace(url), 3000): toastr.error(errorMsg);
+export const alert = (type, errorMsg, username, token, url) => {
+  if (type === "error" || "success" && !username && !token) {
+    type === "success" ? toastr.success(errorMsg) && setTimeout(() => window.location.replace(url), 3000) : toastr.error(errorMsg);
   }
-  else if(type==="success" && !errorMsg){
+  else if (type === "success" && !errorMsg) {
     toastr.success(`Logging in as ${username}!`);
     localStorage.setItem("token", token);
     localStorage.setItem("username", username);
@@ -16,7 +16,15 @@ export const alert=(type,errorMsg,username, token, url)=>{
 
 };
 
-export const postQuestion = (questionData) => dispatch => 
+export const logOut = () => dispatch => {
+  localStorage.removeItem("token");
+  return dispatch({
+    type: LOG_OUT,
+    payload: "Successfully logged out"
+  });
+};
+
+export const postQuestion = (questionData) => dispatch =>
   fetch("https://stackoverflow-v2.herokuapp.com/api/v2/question", {
     method: "POST",
     headers: {
@@ -28,17 +36,19 @@ export const postQuestion = (questionData) => dispatch =>
   })
     .then((res) => {
       let result;
-      if(res.status === 201){
+      if (res.status === 201) {
         result = res.json();
-        result.then(response =>{
-          dispatch({ type: POST, payload: response.message });});
+        result.then(response => {
+          dispatch({ type: POST, payload: response.message });
+        });
       }
       else {
         result = res.text();
-        result.then(response=>{
-          dispatch({ type: POST_FAIL, payload: response});
+        result.then(response => {
+          dispatch({ type: POST_FAIL, payload: response });
         });
-      }});
+      }
+    });
 
 export const getAll = () => dispatch =>
   fetch("https://stackoverflow-v2.herokuapp.com/api/v2/questions")

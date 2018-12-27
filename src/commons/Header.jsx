@@ -1,10 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
+import { logOut } from "../actions/questionActions";
 
 const Header = (props) => {
+
+  const onClick = () =>{
+    props.logOut();
+  };
 
   const token = window.localStorage.getItem("token");
   if (!token){
@@ -43,6 +49,8 @@ const Header = (props) => {
             <a className="nav-link " data-toggle="dropdown" id="dropdown01" aria-haspopup="true" aria-expanded="false" href="#">Account</a>
             <div className="dropdown-menu" aria-labelledby="dropdown01">
               <Link className="dropdown-item" to="/create">Ask Question</Link>
+              {/* <a className="dropdown-item" href="#">Dashboard</a> */}
+              <button type="submit" id="logOut" className="dropdown-item" onClick={() => onClick()}>Log Out</button>
             </div>
           </li>
         </ul>
@@ -57,4 +65,12 @@ Header.propTypes = {
   logOut: PropTypes.func.isRequired,
 };
 
-export default Header;
+export const mapDispatchToProps = dispatch => ({
+  logOut: () => dispatch(logOut())
+});
+export { Header };
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Header);
